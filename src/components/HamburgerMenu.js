@@ -9,12 +9,12 @@ function HamburgerMenu() {
             document.body.style.overflowY = 'hidden'
         } else {
             setActive(false)
-            document.body.style.overflowX = 'initial'
+            document.body.style.overflowY = 'initial'
         }
     }
 
     return (
-        <div className={`hamburger-menu ${active ? "hamburger-menu--activ}" : ""}`} onClick={ toggleActive }>
+        <div className={`hamburger-menu ${active ? "hamburger-menu--active" : ""}`} onClick={ toggleActive }>
             <div className="hamburger-menu__bar hamburger-menu__bar--1"></div>
             <div className="hamburger-menu__bar hamburger-menu__bar--2"></div>
             <div className="hamburger-menu__bar hamburger-menu__bar--3"></div>
@@ -23,3 +23,4 @@ function HamburgerMenu() {
 }
 
 export default HamburgerMenu
+

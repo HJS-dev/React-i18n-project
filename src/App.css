@@ -1,3 +1,88 @@
+.header {
+  padding: 0 4rem;
+}
+
+.header__contnet-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 8rem;
+}
+
+.header__logo-link {
+  position: relative;
+  z-index: 10;
+  margin-right: auto;
+}
+
+.header__logo-link:focus {
+  outline: 2px dotted white;
+}
+
+.header__logo {
+  width: 18rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .header__logo {
+    width: initial;
+  }
+}
+
+.header-hero-container {
+  height: 81.25rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4))) url("../assets/moblie/image-hero.jbg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)) url("../assets/moblie/image-hero.jbg");
+}
+
+.desktop-menu__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.desktop-menu__link {
+  position: relative;
+}
+
+.desktop-menu__link::after {
+  content: '';
+  position: absolute;
+  bottom: -.5rem;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.desktop-menu__link:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.desktop-menu__link:not(:last-child) {
+  margin-right: 4rem;
+}
+
+.desktop-menu__link a {
+  color: white;
+  font-size: 1.875rem;
+  font-family: 'Alata', sans-serif;
+  line-height: 3.25rem;
+  text-decoration: none;
+}
+
+.desktop-menu__link a:focus {
+  outline: 2px dotted white;
+}
+
 .hamburger-menu-wrapper {
   position: relative;
   z-index: 10;
@@ -84,12 +169,13 @@
   position: relative;
   z-index: 1;
   width: 3rem;
-  curser: pointer;
+  cursor: pointer;
 }
 
 .hamburger-menu__bar {
   width: 3rem;
   height: .25rem;
+  background-color: white;
   -webkit-transition: .3s;
   transition: .3s;
 }

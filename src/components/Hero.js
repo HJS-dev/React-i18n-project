@@ -1,11 +1,11 @@
-import Header from './Header'
+import Header from './Header';
 
 function Hero() {
     return (
         <div className="header-hero-container">
             <Header />
             <section className="hero">
-                <div className="contnet-wrapper hero__content-wrapper">
+                <div className="content-wrapper hero__content-wrapper">
                     <h1 className="hero__heading">Immersive Experiences That <span>Deliver</span></h1>
                 </div>
             </section>
@@ -13,4 +13,4 @@ function Hero() {
     )
 }
 
-export default Hero
+export default Hero;
