@@ -1,19 +1,18 @@
-import { useState } from 'react'
-import HamburgerMenu from './HamburgerMenu'
+import { useState } from 'react';
+
+import HamburgerMenu from './HamburgerMenu';
 
 function MobileMenu() {
-    let [active, setActive] = useState(false)
+    let [active, setActive] = useState(false);
 
     function toggleActive() {
-        console.log('clicked')
+        console.log('clicked');
         if (active === false) {
-            setActive(true)
+            setActive(true);
         } else {
-            setActive(false)
+            setActive(false);
         }
-    }
-
-  
+    };
 
     return (
         <div>
@@ -29,8 +28,8 @@ function MobileMenu() {
                     </ul>
                 </nav>
             </div>
-        </div>
-    )
+        </div> 
+    );
 }
 
-export default MobileMenu
+export default MobileMenu;

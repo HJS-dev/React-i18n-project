@@ -1,17 +1,17 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
 function HamburgerMenu() {
-    let [active, setActive] = useState(false)
+    let [active, setActive] = useState(false);
 
     function toggleActive() {
         if (active === false) {
-            setActive(true)
-            document.body.style.overflowY = 'hidden'
+            setActive(true);
+            document.body.style.overflowY = 'hidden';
         } else {
-            setActive(false)
-            document.body.style.overflowY = 'initial'
+            setActive(false);
+            document.body.style.overflowY = 'initial';
         }
-    }
+    };
 
     return (
         <div className={`hamburger-menu ${active ? "hamburger-menu--active" : ""}`} onClick={ toggleActive }>
@@ -22,5 +22,4 @@ function HamburgerMenu() {
     )
 }
 
-export default HamburgerMenu
-
+export default HamburgerMenu;

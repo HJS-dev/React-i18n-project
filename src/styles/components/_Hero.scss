@@ -1,14 +1,14 @@
 .header-hero-container {
-    height: 81.25rem;
-    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../assets/mobile/image-hero.jpg');
+	height: 81.25rem;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('/assets/mobile/image-hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .hero {
-    padding: 0 3rem;
+	padding: 0 3rem;
     padding-top: 15.625rem;
-
+    
     &__heading {
         max-width: 50rem;
         border: 2px solid white;
@@ -26,7 +26,7 @@
 }
 
 @media (min-width: 370px) {
-    .hero {
+	.hero {
         &__heading {
             padding: 3rem;
             font-size: 5rem;
@@ -37,10 +37,10 @@
 
 @media (min-width: 600px) {
     .header-hero-container {
-        background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../assets/desktop/image-hero.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('/assets/desktop/image-hero.jpg');
     }
 
-    .hero {
+	.hero {
         &__heading {
             max-width: 60rem;
             padding: 4rem;
@@ -51,7 +51,7 @@
 }
 
 @media (min-width: 800px) {
-    .hero {
+	.hero {
         &__heading {
             max-width: 81.25rem;
             padding: 5rem;

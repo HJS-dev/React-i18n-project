@@ -1,25 +1,25 @@
-import { cards } from '../assets/index'
+import { cards } from '../assets/index';
 
-function Creations() {
+function Creations() {    
     function handleMouseMove(e) {
-        let boundingBox = e.target.getBoundingClientRect()
-        let halfWidth = (boundingBox.width / 2)
-        let halfHeight = (boundingBox.height / 2)
-        let cursorX = (e.clientX - boundingBox.left) - halfWidth
-        let cursorY = (e.clientY - boundingBox.top) - halfHeight
-        
-        let img = e.target.querySelector('img')
-        img.style.transform = `scale(1.25) translateX(${-(cursorX / (halfWidth / 10))}%) translateY(${-(cursorY / (halfHeight / 10))}%)`
-        
-        let bgTitle = e.target.querySelector('.creation-card__bg-title')
-        bgTitle.style.transform = `scale(1.25) translateX(${(cursorX / (halfWidth / 10))}%) translateY(${(cursorY / (halfHeight / 10))}%)`
+        let boundingBox = e.target.getBoundingClientRect();
+        let halfWidth = (boundingBox.width / 2);
+        let halfHeight = (boundingBox.height / 2);
+        let cursorX = (e.clientX - boundingBox.left) - halfWidth;
+        let cursorY = (e.clientY - boundingBox.top) - halfHeight;
+
+        let img = e.target.querySelector('img');
+        img.style.transform = `scale(1.25) translateX(${-(cursorX / (halfWidth / 10))}%) translateY(${-(cursorY / (halfHeight / 10))}%)`;
+
+        let bgTitle = e.target.querySelector('.creation-card__bg-title');
+        bgTitle.style.transform = `scale(1.25) translateX(${(cursorX / (halfWidth / 10))}em) translateY(${(cursorY / (halfHeight / 10))}%)`;
     }
 
     function handleMouseLeave(e) {
-        let img = e.target.querySelector('img')
-        img.style.transform = ''
-        let bgTitle = e.target.querySelector('.creation-card__bg-title')
-        bgTitle.style.transform = ''
+        let img = e.target.querySelector('img');
+        img.style.transform = '';
+        let bgTitle = e.target.querySelector('.creation-card__bg-title');
+        bgTitle.style.transform = '';
     }
 
     return (
@@ -32,8 +32,8 @@ function Creations() {
                             <div className="creation-card__wrapper">
                                 <figure>
                                     <picture>
-                                        <source media="(max-width: 999px)" srcSet={card.mobileImg} />
-                                        <img className="creation-card__img" srcSet={card.desktopImg} alt={card.alt} />
+                                        <source media="(max-width: 999px)" srcSet={card.mobileImg}/>
+                                        <img className="creation-card__img" src={card.desktopImg} alt={card.alt}/>
                                     </picture>
                                     <figcaption>{card.title}</figcaption>
                                 </figure>
@@ -45,8 +45,7 @@ function Creations() {
                 <a href="." className="creations__link">See All</a>
             </div>
         </section>
-    )
-
+    );
 }
 
-export default Creations
+export default Creations;

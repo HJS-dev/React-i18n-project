@@ -1,11 +1,7 @@
-
-import LangBtn from './LngBtn'
-
+import LangBtn from './LangBtn'
 function DesktopMenu() {
-
-    
     return (
-        <nav className="desktop-menu__nav" dir="rtl">
+        <nav className="desktop-menu__nav">
             <ul className="desktop-menu__links">
                 <li className="desktop-menu__link"><a href=".">About</a></li>
                 <li className="desktop-menu__link"><a href=".">Careers</a></li>
@@ -13,9 +9,9 @@ function DesktopMenu() {
                 <li className="desktop-menu__link"><a href=".">Products</a></li>
                 <li className="desktop-menu__link"><a href=".">Support</a></li>
             </ul>
-             <LangBtn />
+            <LangBtn />
         </nav>
     )
 }
 
-export default DesktopMenu
+export default DesktopMenu;

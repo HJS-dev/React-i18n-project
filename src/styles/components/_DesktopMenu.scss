@@ -1,12 +1,7 @@
 .desktop-menu {
     &__nav {
         display: flex;
-        background: red;
-        &:dir(rtl) {
-            background: blue;
-        }
     }
-
 
     &__links {
         display: flex;

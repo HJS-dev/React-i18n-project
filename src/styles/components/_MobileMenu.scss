@@ -1,6 +1,6 @@
 .hamburger-menu-wrapper {
-    position: relative;
-    z-index: 10;
+	position: relative;
+	z-index: 10;
 }
 
 .mobile-menu {
@@ -14,7 +14,7 @@
         padding-top: 28rem;
         padding-bottom: 10rem;
         background-color: black;
-
+    
         clip-path: circle(0 at 92.75% 11.5%);
         opacity: 0;
         transition: clip-path .5s ease-in-out, 0s opacity 1s;

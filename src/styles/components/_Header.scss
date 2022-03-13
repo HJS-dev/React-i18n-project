@@ -1,19 +1,17 @@
 .header {
     padding: 0 4rem;
-
-    &__contnet-wrapper {
+    
+    &__content-wrapper {
         display: flex;
         align-items: center;
         padding-top: 8rem;
     }
 
-
-
     &__logo-link {
         position: relative;
         z-index: 10;
         margin-right: auto;
-
+        
         &:focus {
             outline: 2px dotted white;
         }
@@ -26,14 +24,6 @@
 
 @media only screen and (min-width: 800px) {
     .header {
-        &__contnet-wrapper{
-            &:dir(rtl) {
-                width: 100%;
-                justify-content: space-between;
-                background: blue;
-            }
-        } 
-
         &__logo {
             width: initial;
         }

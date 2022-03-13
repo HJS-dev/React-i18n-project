@@ -1,0 +1,42 @@
+// imports
+
+@import './components/Header';
+@import './components/Hero';
+@import './components/Intro';
+@import './components/Creations';
+@import './components/Footer';
+
+@import './components/DesktopMenu';
+@import './components/MobileMenu';
+@import './components/HamburgerMenu';
+@import './components/LangBtn';
+
+// base styles
+
+html {
+	box-sizing: border-box;
+	font-size: 55%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.875rem;
+    overflow-x: hidden;
+}
+
+// other
+
+.content-wrapper {
+	width: 100%;
+	max-width: 1110px;
+	margin: 0 auto;
+}

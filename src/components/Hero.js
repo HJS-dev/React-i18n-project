@@ -1,20 +1,16 @@
 import Header from './Header';
-import { withNamespaces } from 'react-i18next'
-import { Trans } from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 
-function Hero({ t }) {
-   
+
+function Hero() {
+    const { t } = useTranslation()
     return (
         <div className="header-hero-container">
             <Header />
             <section className="hero">
-                <div className="content-wrapper hero__content-wrapper">
-                             
-                    <h1 className="hero__heading">
-                        <Trans>
-                            Immersive Experiences That <span>Deliver</span>
-
-                        </Trans>
+                <div className="content-wrapper hero__content-wrapper">    
+                    <h1 className="hero__heading">     
+                           {t("hero_heading")}
                     </h1>
                 </div>
             </section>
@@ -22,4 +18,4 @@ function Hero({ t }) {
     )
 }
 
-export default withNamespaces()(Hero)
+export default Hero
