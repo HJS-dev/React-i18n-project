@@ -1,40 +1,40 @@
-import React, {Suspense}  from 'react';
+import React  from 'react';
 import ReactDOM from 'react-dom';
 import './i18next/i18n'
 
 import App from './App'
 
+import './styles/App.scss'
+// const Ltr = React.lazy(() => import ('./themes/ltr'))
+// const Rtl = React.lazy(() => import ('./themes/rlt'))
 
-const Ltr = React.lazy(() => import ('./themes/ltr'))
-const Rtl = React.lazy(() => import ('./themes/rlt'))
-
-const Selector = ({ children }) => {
-        // const Dir = document.body.getAttribute("dir")
-        const Dir = document.body.getAttribute("dir")
+// const Selector = ({ children }) => {
+//         // const Dir = document.body.getAttribute("dir")
+//         const Dir = document.body.getAttribute("dir") || 'ltr'
 
 
-  return (
-    <>
-      <React.Suspense fallback ={<></>}>
-        {(Dir === 'ltr') && <Ltr />}
-        {(Dir === 'rtl') && <Rtl />}
-      </React.Suspense>
-      {children}
-    </>
+//   return (
+//     <>
+//       <React.Suspense fallback ={<></>}>
+//         {(Dir === 'ltr') && <Ltr />}
+//         {(Dir === 'rtl') && <Rtl />}
+//       </React.Suspense>
+//       {children}
+//     </>
 
-  )
-}
+//   )
+// }
 
 
 
 ReactDOM.render(
-    <Selector>
+    
   <React.Suspense fallback={"...Loading"}>
   <React.StrictMode>
       <App />
     </React.StrictMode>
  </React.Suspense>
-    </Selector>,
+  ,
   
   document.getElementById('root')
 );
