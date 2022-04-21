@@ -7,7 +7,10 @@ import Intro from './components/Intro'
 import Creations from './components/Creations'
 import Footer from './components/Footer'
 
-import './styles/App.scss'
+// import './styles/App.scss'
+// import './styles/App.scss'
+
+
 
 function App() {
     const currentLanguageCode = cookies.get('i18next') || 'en'

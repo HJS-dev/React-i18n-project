@@ -25,7 +25,7 @@ i18n
     // Options for language detector
     detection: {
       order: ['path', 'cookie', 'htmlTag'],
-      caches: ['cookie'],
+      caches: ['cookie', 'localStorage'],
     },
     // react: { useSuspense: false },
     backend: {

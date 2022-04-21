@@ -30,7 +30,7 @@
         
     },
     {
-        code: 'Jp',
+        code: 'jp',
         name: '日本の',
         country_code: 'Jp',
         

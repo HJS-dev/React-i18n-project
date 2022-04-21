@@ -2,6 +2,7 @@ import langImg from "../assets/shared/translate_white_24dp.svg";
 import languages from "../i18next/languages.config";
 import i18next from "i18next";
 
+
 function LangBtn() {
   return (
     <div className="langBtn">

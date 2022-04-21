@@ -1,6 +1,9 @@
 import { cards } from '../assets/index';
+import { Trans } from 'react-i18next'
+import { useTranslation } from 'react-i18next' 
 
 function Creations() {    
+    const { t } = useTranslation()
     function handleMouseMove(e) {
         let boundingBox = e.target.getBoundingClientRect();
         let halfWidth = (boundingBox.width / 2);
@@ -25,7 +28,7 @@ function Creations() {
     return (
         <section className="creations">
             <div className="content-wrapper creations__content-wrapper">
-                <h3 className="creations__heading">Our Creations</h3>
+                <h3 className="creations__heading">{t('Our_Creations')}</h3>
                 <div className="creations__grid">
                     {cards.map((card) => (
                         <a href="." className="creation-card" key={card.id} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
@@ -35,14 +38,22 @@ function Creations() {
                                         <source media="(max-width: 999px)" srcSet={card.mobileImg}/>
                                         <img className="creation-card__img" src={card.desktopImg} alt={card.alt}/>
                                     </picture>
-                                    <figcaption>{card.title}</figcaption>
+                                    <figcaption>
+                                        <Trans>
+                                            {card.title}
+                                        </Trans>
+                                    </figcaption>
                                 </figure>
-                                <span className="creation-card__bg-title" aria-hidden="true">{card.title}</span>
+                                <span className="creation-card__bg-title" aria-hidden="true">
+                                    <Trans>
+                                        {card.title}
+                                    </Trans>
+                                </span>
                             </div>
                         </a>
                     ))}
                 </div>
-                <a href="." className="creations__link">See All</a>
+                <a href="." className="creations__link">{t('see_all')}</a>
             </div>
         </section>
     );

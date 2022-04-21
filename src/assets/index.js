@@ -18,12 +18,12 @@ import fisheyeMobileImg from './mobile/image-fisheye.jpg'
 import fisheyeDesktopImg from './desktop/image-fisheye.jpg'
 
 export let cards = [
-    {id: 0, title: 'Deep Earth', mobileImg: deepEarthMobileImg, desktopImg: deepEarthDesktopImg, alt: 'earth from space'},
-    { id: 1, title: 'Night Arcade', mobileImg: nightArcadeMobileImg, desktopImg: nightArcadeDesktopImg, alt: 'arcade at night' },
-    { id: 2, title: 'Soccer Team VR', mobileImg: soccerTeamMobileImg, desktopImg: soccerTeamDesktopImg, alt: 'man playing soccer' },
-    {id: 3, title: 'The Grid', mobileImg: gridMobileImg, desktopImg: gridDesktopImg, alt: 'sports car'},
-    {id: 4, title: 'From Up Above VR', mobileImg: fromAboveMobileImg, desktopImg: fromAboveDesktopImg, alt: 'arial view of mountain road'},
-    {id: 5, title: 'Pocket Borealis', mobileImg: pocketBorealisMobileImg, desktopImg: pocketBorealisDesktopImg, alt: 'aurora borealis'},
-    {id: 6, title: 'The Curiosity', mobileImg: curiosityMobileImg, desktopImg: curiosityDesktopImg, alt: 'rover on Mars'},
-    {id: 7, title: 'Make It Fisheye', mobileImg: fisheyeMobileImg, desktopImg: fisheyeDesktopImg, alt: 'fisheye effect'},
+    {id: 0, title: 'Deep_Earth', mobileImg: deepEarthMobileImg, desktopImg: deepEarthDesktopImg, alt: 'earth from space'},
+    { id: 1, title: 'Night_Arcade', mobileImg: nightArcadeMobileImg, desktopImg: nightArcadeDesktopImg, alt: 'arcade at night' },
+    { id: 2, title: 'Soccer_Team_VR', mobileImg: soccerTeamMobileImg, desktopImg: soccerTeamDesktopImg, alt: 'man playing soccer' },
+    {id: 3, title: 'The_Grid', mobileImg: gridMobileImg, desktopImg: gridDesktopImg, alt: 'sports car'},
+    {id: 4, title: 'From_Up_Above_VR', mobileImg: fromAboveMobileImg, desktopImg: fromAboveDesktopImg, alt: 'arial view of mountain road'},
+    {id: 5, title: 'Pocket_Borealis', mobileImg: pocketBorealisMobileImg, desktopImg: pocketBorealisDesktopImg, alt: 'aurora borealis'},
+    {id: 6, title: 'The_Curiosity', mobileImg: curiosityMobileImg, desktopImg: curiosityDesktopImg, alt: 'rover on Mars'},
+    {id: 7, title: 'Make_It_Fisheye', mobileImg: fisheyeMobileImg, desktopImg: fisheyeDesktopImg, alt: 'fisheye effect'},
 ]

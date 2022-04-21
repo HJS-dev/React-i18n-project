@@ -1,4 +1,22 @@
 {
   "app_title":"Loopstudios",
-  "hero_heading": "Immersive Experiences That Deliver"
+  "About": "About",
+  "Careers": "Careers",
+  "Events": "Events",
+  "Products": "Products",
+  "Support": "Support",
+  "hero_heading": "Immersive Experiences That Deliver",
+  "intro_heading": "The Leader In Interactive VR",
+  "intro_paragraph": "Founded in 2011, Loopstudios has been producing world-className virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.",
+  "Our_Creations": "Our Creations",
+  "see_all": "see all",
+  "Deep_Earth" : "Deep Earth",
+  "Night_Arcade": "Night Arcade",
+  "Soccer_Team_VR": "Soccer Team VR",
+  "The_Grid": "The Grid", 
+  "From_Up_Above_VR": "From Up Above VR",
+  "Pocket_Borealis": "Pocket Borealis",
+  "The_Curiosity": "The Curiosity",
+  "Make_It_Fisheye": "Make It Fisheye",
+  "copy_rights": "2021 Loopstudios. All rights reserved."
 }
