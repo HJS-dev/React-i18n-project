@@ -5,7 +5,7 @@ function DesktopMenu() {
     return (
         <nav className="desktop-menu__nav">
             <ul className="desktop-menu__links">
-                <li className="desktop-menu__link"><a href=".">{t('About')}</a></li>
+                <li className="desktop-menu__link" id="about"><a href=".">{t('About')}</a></li>
                 <li className="desktop-menu__link"><a href=".">{t('Careers')}</a></li>
                 <li className="desktop-menu__link"><a href=".">{t('Events')}</a></li>
                 <li className="desktop-menu__link"><a href=".">{t('Products')}</a></li>

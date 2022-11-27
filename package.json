@@ -16,7 +16,7 @@
     "react-dom": "^17.0.2",
     "react-i18next": "^11.15.5",
     "react-scripts": "5.0.0",
-    "rtlcss": "^3.5.0",
+    "rsuite": "^5.22.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -59,6 +59,9 @@
     ]
   },
   "devDependencies": {
-    "postcss-dir-pseudo-class": "^6.0.4"
+    "@craco/craco": "^6.4.3",
+    "postcss-dir-pseudo-class": "^6.0.4",
+    "rtlcss": "^3.5.0",
+    "sass": "^1.50.1"
   }
 }
