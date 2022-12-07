@@ -311,8 +311,8 @@
 .footer__contnet-wrapper {
   position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .footer__logo-link {
   display: block;
@@ -326,8 +326,8 @@
 }
 .footer__links {
   display: flex;
-  flex-direction: column;
   list-style: none;
+  gap: 2rem;
 }
 .footer__link {
   position: relative;
@@ -356,6 +356,22 @@
 }
 .footer__link:not(:last-child) {
   margin-bottom: 2rem;
+}
+.footer .social-links-copy-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.footer__social-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3.5rem;
+}
+.footer__copyright {
+  color: white;
 }
 
 .desktop-menu__nav {

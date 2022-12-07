@@ -6,9 +6,15 @@
     &__contnet-wrapper {
         position: relative;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        // flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        // background-color: rgba(208, 155, 155, 0.526);
     }
+    // .logo-nav-container{
+    //     display: flex;
+
+    // }
 
     &__logo-link {
         display: block;
@@ -25,8 +31,9 @@
 
     &__links {
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
         list-style: none;
+        gap: 2rem;
     }
 
     &__link {
@@ -60,5 +67,23 @@
         &:not(:last-child) {
             margin-bottom: 2rem;
         }
+    }
+    .social-links-copy-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+    }
+    &__social-links{
+        width: 100%;
+        display: flex;
+        // gap: 2rem;
+        justify-content: space-evenly;
+        margin-bottom: 3.5rem;
+    }
+    &__copyright{
+        color: white;
     }
 }
