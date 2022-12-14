@@ -4,7 +4,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import HttpApi from "i18next-http-backend";
 
 const Options = {
-  supportedLngs: ["en", "ar", "fr"],
+  supportedLngs: ["en", "ar", "fr", "es", "du", "jp", "ru"],
   fallbackLng: false,
   fallbackNS: false,
   debug: true,
